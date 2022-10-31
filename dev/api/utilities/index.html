@@ -1145,13 +1145,13 @@
 <div class="highlight"><pre><span></span><code><span class="n">cpu</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
 <p>Transfer <code>x</code> to CPU</p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/1cecb8fa5fb14aad4e3e0a6d1709f632381add3c/src/adapt.jl#L31-L35' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/e610076cd1b0d1b8338cbee21e443791b7aef00b/src/adapt.jl#L31-L35' class='documenter-source'>source</a><br></p>
 <p><a id='Lux.gpu' href='#Lux.gpu'>#</a>
 <strong><code>Lux.gpu</code></strong> &mdash; <em>Function</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">gpu</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
 <p>Transfer <code>x</code> to GPU</p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/1cecb8fa5fb14aad4e3e0a6d1709f632381add3c/src/adapt.jl#L38-L42' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/e610076cd1b0d1b8338cbee21e443791b7aef00b/src/adapt.jl#L38-L42' class='documenter-source'>source</a><br></p>
 <p><a id='Initialization'></a></p>
 <p><a id='Initialization-1'></a></p>
 <h2 id="initialization">Initialization<a class="headerlink" href="#initialization" title="Permanent link">¤</a></h2>
@@ -1162,7 +1162,7 @@
 <p>Return an <code>Array{Float32}</code> of the given <code>size</code> containing random numbers drawn from a normal distribution with standard deviation <code>gain * sqrt(2 / (fan_in + fan_out))</code>. This method is described in [1] and also known as Xavier initialization.</p>
 <p><strong>References</strong></p>
 <p>[1] Glorot, Xavier, and Yoshua Bengio. "Understanding the difficulty of training deep feedforward neural networks." <em>Proceedings of the thirteenth international conference on artificial intelligence and statistics</em>. 2010.</p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/1cecb8fa5fb14aad4e3e0a6d1709f632381add3c/src/utils.jl#L66-L78' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/e610076cd1b0d1b8338cbee21e443791b7aef00b/src/utils.jl#L66-L78' class='documenter-source'>source</a><br></p>
 <p><a id='Lux.glorot_uniform' href='#Lux.glorot_uniform'>#</a>
 <strong><code>Lux.glorot_uniform</code></strong> &mdash; <em>Function</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">glorot_uniform</span><span class="p">(</span><span class="n">rng</span><span class="o">::</span><span class="kt">AbstractRNG</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="o">...</span><span class="p">;</span><span class="w"> </span><span class="n">gain</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
@@ -1170,31 +1170,31 @@
 <p>Return an <code>Array{Float32}</code> of the given <code>size</code> containing random numbers drawn from a uniform distribution on the interval <span class="arithmatex">\([-x, x]\)</span>, where <code>x = gain * sqrt(6 / (fan_in + fan_out))</code>. This method is described in [1] and also known as Xavier initialization.</p>
 <p><strong>References</strong></p>
 <p>[1] Glorot, Xavier, and Yoshua Bengio. "Understanding the difficulty of training deep feedforward neural networks." <em>Proceedings of the thirteenth international conference on artificial intelligence and statistics</em>. 2010.</p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/1cecb8fa5fb14aad4e3e0a6d1709f632381add3c/src/utils.jl#L47-L60' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/e610076cd1b0d1b8338cbee21e443791b7aef00b/src/utils.jl#L47-L60' class='documenter-source'>source</a><br></p>
 <p><a id='Lux.ones32' href='#Lux.ones32'>#</a>
 <strong><code>Lux.ones32</code></strong> &mdash; <em>Function</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">ones32</span><span class="p">(</span><span class="n">rng</span><span class="o">::</span><span class="kt">AbstractRNG</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="o">...</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ones</span><span class="p">(</span><span class="kt">Float32</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
 <p>Return an <code>Array{Float32}</code> of ones of the given <code>size</code>. (<code>rng</code> is ignored)</p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/1cecb8fa5fb14aad4e3e0a6d1709f632381add3c/src/utils.jl#L21-L25' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/e610076cd1b0d1b8338cbee21e443791b7aef00b/src/utils.jl#L21-L25' class='documenter-source'>source</a><br></p>
 <p><a id='Lux.rand32' href='#Lux.rand32'>#</a>
 <strong><code>Lux.rand32</code></strong> &mdash; <em>Function</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">rand32</span><span class="p">(</span><span class="n">rng</span><span class="o">::</span><span class="kt">AbstractRNG</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="o">...</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rand</span><span class="p">(</span><span class="n">rng</span><span class="p">,</span><span class="w"> </span><span class="kt">Float32</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
 <p>Return an <code>Array{Float32}</code> of random numbers from a uniform distribution of the given <code>size</code>.</p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/1cecb8fa5fb14aad4e3e0a6d1709f632381add3c/src/utils.jl#L39-L44' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/e610076cd1b0d1b8338cbee21e443791b7aef00b/src/utils.jl#L39-L44' class='documenter-source'>source</a><br></p>
 <p><a id='Lux.randn32' href='#Lux.randn32'>#</a>
 <strong><code>Lux.randn32</code></strong> &mdash; <em>Function</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">randn32</span><span class="p">(</span><span class="n">rng</span><span class="o">::</span><span class="kt">AbstractRNG</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="o">...</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">randn</span><span class="p">(</span><span class="n">rng</span><span class="p">,</span><span class="w"> </span><span class="kt">Float32</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
 <p>Return an <code>Array{Float32}</code> of random numbers from a standard normal distribution of the given <code>size</code>.</p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/1cecb8fa5fb14aad4e3e0a6d1709f632381add3c/src/utils.jl#L31-L36' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/e610076cd1b0d1b8338cbee21e443791b7aef00b/src/utils.jl#L31-L36' class='documenter-source'>source</a><br></p>
 <p><a id='Lux.zeros32' href='#Lux.zeros32'>#</a>
 <strong><code>Lux.zeros32</code></strong> &mdash; <em>Function</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">zeros32</span><span class="p">(</span><span class="n">rng</span><span class="o">::</span><span class="kt">AbstractRNG</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="o">...</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zeros</span><span class="p">(</span><span class="kt">Float32</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="o">...</span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
 <p>Return an <code>Array{Float32}</code> of zeros of the given <code>size</code>. (<code>rng</code> is ignored)</p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/1cecb8fa5fb14aad4e3e0a6d1709f632381add3c/src/utils.jl#L14-L18' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/e610076cd1b0d1b8338cbee21e443791b7aef00b/src/utils.jl#L14-L18' class='documenter-source'>source</a><br></p>
 <p><a id='Miscellaneous-Utilities'></a></p>
 <p><a id='Miscellaneous-Utilities-1'></a></p>
 <h2 id="miscellaneous-utilities">Miscellaneous Utilities<a class="headerlink" href="#miscellaneous-utilities" title="Permanent link">¤</a></h2>
@@ -1207,7 +1207,7 @@
 <p class="admonition-title">Warning</p>
 <p>This function has been deprecated. Use <code>f.(x)</code> instead.</p>
 </div>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/1cecb8fa5fb14aad4e3e0a6d1709f632381add3c/src/deprecated.jl#L89-L97' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/e610076cd1b0d1b8338cbee21e443791b7aef00b/src/deprecated.jl#L89-L97' class='documenter-source'>source</a><br></p>
 <p><a id='Lux.elementwise_add' href='#Lux.elementwise_add'>#</a>
 <strong><code>Lux.elementwise_add</code></strong> &mdash; <em>Function</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">elementwise_add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"></span>
@@ -1217,7 +1217,7 @@
 <p class="admonition-title">Warning</p>
 <p>This function has been deprecated. Use <code>x .+ y</code> instead.</p>
 </div>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/1cecb8fa5fb14aad4e3e0a6d1709f632381add3c/src/deprecated.jl#L104-L112' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/e610076cd1b0d1b8338cbee21e443791b7aef00b/src/deprecated.jl#L104-L112' class='documenter-source'>source</a><br></p>
 <p><a id='Lux.elementwise_mul' href='#Lux.elementwise_mul'>#</a>
 <strong><code>Lux.elementwise_mul</code></strong> &mdash; <em>Function</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">elementwise_mul</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"></span>
@@ -1227,7 +1227,7 @@
 <p class="admonition-title">Warning</p>
 <p>This function has been deprecated. Use <code>x .* y</code> instead.</p>
 </div>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/1cecb8fa5fb14aad4e3e0a6d1709f632381add3c/src/deprecated.jl#L119-L127' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/e610076cd1b0d1b8338cbee21e443791b7aef00b/src/deprecated.jl#L119-L127' class='documenter-source'>source</a><br></p>
 <p><a id='Lux.istraining' href='#Lux.istraining'>#</a>
 <strong><code>Lux.istraining</code></strong> &mdash; <em>Function</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">istraining</span><span class="p">(</span><span class="o">::</span><span class="kt">Val</span><span class="p">{</span><span class="kt">training</span><span class="p">})</span><span class="w"></span>
@@ -1235,20 +1235,20 @@
 </code></pre></div>
 <p>Returns <code>true</code> if <code>training</code> is <code>true</code> or if <code>st</code> contains a <code>training</code> field with value <code>true</code>. Else returns <code>false</code>.</p>
 <p>Method undefined if <code>st.training</code> is not of type <code>Val</code>.</p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/1cecb8fa5fb14aad4e3e0a6d1709f632381add3c/src/utils.jl#L95-L103' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/e610076cd1b0d1b8338cbee21e443791b7aef00b/src/utils.jl#L95-L103' class='documenter-source'>source</a><br></p>
 <p><a id='Lux.multigate' href='#Lux.multigate'>#</a>
 <strong><code>Lux.multigate</code></strong> &mdash; <em>Function</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">multigate</span><span class="p">(</span><span class="n">x</span><span class="o">::</span><span class="kt">AbstractArray</span><span class="p">,</span><span class="w"> </span><span class="o">::</span><span class="kt">Val</span><span class="p">{</span><span class="kt">N</span><span class="p">})</span><span class="w"></span>
 </code></pre></div>
 <p>Split up <code>x</code> into <code>N</code> equally sized chunks (along dimension <code>1</code>).</p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/1cecb8fa5fb14aad4e3e0a6d1709f632381add3c/src/utils.jl#L180-L184' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/e610076cd1b0d1b8338cbee21e443791b7aef00b/src/utils.jl#L180-L184' class='documenter-source'>source</a><br></p>
 <p><a id='Lux.replicate' href='#Lux.replicate'>#</a>
 <strong><code>Lux.replicate</code></strong> &mdash; <em>Function</em>.</p>
 <div class="highlight"><pre><span></span><code><span class="n">replicate</span><span class="p">(</span><span class="n">rng</span><span class="o">::</span><span class="kt">AbstractRNG</span><span class="p">)</span><span class="w"></span>
 <span class="n">replicate</span><span class="p">(</span><span class="n">rng</span><span class="o">::</span><span class="kt">CUDA</span><span class="o">.</span><span class="n">RNG</span><span class="p">)</span><span class="w"></span>
 </code></pre></div>
 <p>Creates a copy of the <code>rng</code> state depending on its type.</p>
-<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/1cecb8fa5fb14aad4e3e0a6d1709f632381add3c/src/utils.jl#L85-L90' class='documenter-source'>source</a><br></p>
+<p><a target='_blank' href='https://github.com/avik-pal/Lux.jl/blob/e610076cd1b0d1b8338cbee21e443791b7aef00b/src/utils.jl#L85-L90' class='documenter-source'>source</a><br></p>
 <p><a id='Index'></a></p>
 <p><a id='Index-1'></a></p>
 <h2 id="index">Index<a class="headerlink" href="#index" title="Permanent link">¤</a></h2>
